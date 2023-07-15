@@ -44,4 +44,22 @@ public class SolutionTest {
 
         Assertions.assertEquals(expected, actual);
     }
+    /*[[87,95,42],[3,42,37],[20,42,100],[53,84,80],[10,88,38],[25,80,57],[18,38,33]]*/
+    @Test
+    public void maxValueTest4() {
+        int[][] events = {
+                {87,95,42},
+                {3,42,37},
+                {20,42,100},
+                {53,84,80},
+                {10,88,38},
+                {25,80,57},
+                {18,38,33}
+        };
+        int k = 3;
+        int expected = 222;
+        int actual = new Solution().maxValue(events, k);
+
+        Assertions.assertEquals(expected, actual);
+    }
 }
